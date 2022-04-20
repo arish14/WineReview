@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+ <link rel="stylesheet" href= "{{url_for('static', filename = 'table.css')}}">
+<body>
+<h1>Search by Country</h1>
+<a href="/"> Home</a>
+<center><table class="zui-table">
+    <thead>
+    <tr>
+    <th>Country</th>
+    <th>Winery</th>
+    <th>Price</th>
+    <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for cursors in cursor %}
+    <tr>
+    <td>{{ cursors['country']}}</td>
+    <td>{{ cursors['winery'] }}</td>
+    <td>{{ cursors['price'] }}</td>
+    <td><button id = {{cursors['ID']}} onclick="getId(this)">View More</button></td>
+    </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+</center>
+    <script>
+        function getId(btn){
+            console.log(btn.id);
+            let location = '/wine_info_fetch01?id='+btn.id;
+            window.location.href = location;
+        }
+    </script>
+        </body>
+        </head>
+        </html> 
+    </body>
+    </head>
+    </html> 

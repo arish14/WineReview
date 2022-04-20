@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&family=Whisper&display=swap');
+
+body {
+    background-image: url('bg7.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.zui-table {
+    background-color: rgba(255, 255, 255, 0.808);
+    margin: 20px;
+    border-radius: 20px;
+    border: solid 1px #252525;
+
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-family: 'Raleway';
+    font-size: 16px;
+    text-shadow: none;
+    color: black;
+}
+.zui-table thead th {
+    background-color: #622e37;
+    border: solid 1px #1c1c1c;
+    color: white;
+    padding: 20px;
+    text-align: left;
+}
+.zui-table tbody td {
+    border: solid 1px #1f1f1f;
+    color: #333;
+    padding: 20px;
+}
+
+
+a {
+    font-family: 20px;
+    font-family: 'Raleway';
+    color: white;
+    background-color: rgba(121, 46, 65, 0.523);
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: none;
+}
+
+h1{
+    font-family: 'Whisper', cursive;
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    font-weight: 100;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 10px;
+    background-color: rgba(47, 18, 18, 0.55);
+    font-weight: 100;
+    text-align: center;
+    border-radius: 20px;
+}
+
+img{
+    border-radius: 5px;
+    border: 5px solid black;
+}

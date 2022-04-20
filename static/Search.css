@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&family=Whisper&display=swap');
+
+#search{
+    background-color: rgb(255, 250, 246);
+    color: rgb(35, 2, 2);
+    width: 500px;
+    height: 25px;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    padding-left: 35px;
+    border-radius: 50px;
+    border: 2px solid black;
+    box-shadow: 2px 5px 5px rgba(71, 64, 64, 0.101);
+}
+
+body{
+    background-image: url(bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+::placeholder {
+    color: rgb(72, 32, 32);
+}
+
+button {
+    border: none;
+    border-radius: 50px;
+    margin-left: 20px;
+    padding: 15px 20px;
+    color: white;
+    background-color: rgb(103, 23, 47);
+    box-shadow: 2px 5px 5px rgba(76, 46, 46, 0.118);
+}
+
+img{
+    outline: none;
+    border: none;
+    object-fit: contain;
+    width: 100%;
+}
+
+form{
+    padding-left: 35%;
+    padding-top: 20%;
+}
+
+h1 {
+    border-radius: 20px;
+    font-family: 'Whisper', cursive;
+    color: rgb(83, 25, 48);
+    font-size: 50px;
+    margin: 5px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 10px;
+    background-color: rgba(251, 203, 203, 0.55);
+    font-weight: 100;
+    text-align: center;
+}
+
+a {
+    font-family: 20px;
+    font-family: 'Raleway';
+    color: white;
+    background-color: rgba(121, 46, 65, 0.523);
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 10px;
+    margin-top: 20px;
+    border: none;
+}
+
+a:hover {
+    transition: ease-in-out, 0.4s;
+    background-color: rgba(121, 46, 65, 0.797);
+    box-shadow: 2px 5px 5px rgba(45, 7, 15, 0.094);
+}

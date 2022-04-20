@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href= "{{url_for('static', filename = 'table.css')}}">
+<body>
+<center><h2>Searching by the keyword</h2>
+ <a href="/"> Home</a>
+<a href="/wine_location">Search Again</a>
+<table class="zui-table">
+    <thead>
+    <tr>
+    <th>Country</th>
+    <th>Taster Name</th>
+    <th>Description</th>
+    <th>Wine</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for cursors in cursor %}
+    <tr>
+    <td>{{ cursors['country']}}</td>
+    <td>{{ cursors['taster_name'] }}</td>
+    <td>{{cursors['description']}}</td>
+    <td>{{ cursors['variety'] }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+    </center>
+    </body>
+    </head>
+    </html> 

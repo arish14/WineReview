@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href= "{{url_for('static', filename = 'table.css')}}">
+<body>
+<center><h2>Sorting by price</h2>
+<a href="/"> Home</a>
+<a href="/about">Search again</a>
+<table class="zui-table">
+    <thead>
+    <tr>
+    <th>Country</th>
+    <th>Price</th>
+    <th>Variety</th>
+    <th>Winery</th>
+    <th>Comment</th>
+    <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for document in documents %}
+    <tr>
+    <td>{{ document['country']}}</td>
+    <td>{{ document['price']}}</td>
+    <td>{{document['variety']}}</td>
+    <td>{{ document['winery']}}</td>
+    <td>
+        <form action="{{ url_for("wine_contd_fetch")}}" method="post">
+            <input type="text" name="cmt">
+            <input type="submit" name="id" value={{document['ID']}}>
+        </form>
+    </td>
+    <td><button id = {{document['ID']}} onclick="getId(this)">View comments</button></td>
+    </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+    <script>
+        function getId(btn){
+            console.log(btn.id);
+            let location = '/get_comments?id='+btn.id;
+            console.log(location);
+            window.location.href = location;
+        }
+    </script>
+</center>
+    </body>
+    </head>
+    </html> 

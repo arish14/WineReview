@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href= "{{url_for('static', filename = 'table.css')}}">
+<body>
+<h1>All the details are shown here</h1>
+<a href="/"> Home</a>
+<table class="zui-table">
+    <thead>
+    <tr>
+    <th>Country</th>
+    <th>Winery</th>
+    <th>Description</th>
+    <th>Price</th>
+    <th>Designation</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for colls in coll %}
+    <tr>
+    <td>{{ colls['country']}}</td>
+    <td>{{ colls['winery'] }}</td>
+    <td>{{colls['description']}}</td>
+    <td>{{colls['price']}}</td>
+    <td>{{colls['designation']}}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+    </body>
+    </head>
+    </html> 

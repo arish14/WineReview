@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<style>
+    table,th,
+td {
+border: 1px solid black;
+}
+</style>
+<body>
+<table>
+    <tr>
+    <th>ID</th>
+    <th>Country</th>
+    <th>Winery</th>
+    <th>Description</th>
+    <th>Price</th>
+    </tr>
+    {% for colls in coll %}
+    <tr>
+    <td>{{colls['_id']}}</td>
+    <td>{{ colls['country']}}</td>
+    <td>{{ colls['winery'] }}</td>
+    <td>{{colls['description']}}</td>
+    </tr>
+    {% endfor %}
+    </table>
+    </body>
+    </head>
+    </html> 
